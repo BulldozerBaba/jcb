@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nasbandi
+  labels:
+    env: production
+spec:
+  containers:
+    - name: yogi-jcb
+      image: jcb
+      command: ["rm -rf"]
+      args: ["/home/illegal"]
